@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+}
+.top-design {
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  background-color: hsl(207, 33%, 95%);
+  left: 50%;
+  z-index: -1;
+  border-radius: 0 0 0 70px;
+}
+.header {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+  justify-content: space-between;
+}
+.nav-items {
+  display: flex;
+  width: 50%;
+  list-style-type: none;
+  height: 50vh;
+  padding-top: 3%;
+  justify-content: center;
+}
+.nav-links {
+  margin-left: 1.8rem;
+  color: hsl(230, 11%, 40%);
+  font-weight: 900;
+  text-decoration: none;
+}
+.section-overhead {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 15rem;
+}
+.right-section-image {
+  position: relative;
+  left: 4rem;
+}
+.right-section {
+  width: 50%;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 10%;
+  justify-content: center;
+  width: 50rem;
+}
+.new-cta {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 21rem;
+  padding: 2%;
+  padding-left: 0;
+  justify-content: space-between;
+}
+.powerful-insight {
+  /* border: 2px solid black; */
+  width: 70%;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0%;
+  font-size: 2rem;
+  padding-left: 0;
+  font-weight: 900;
+}
+.project-planning {
+  /* border: 2px solid black; */
+  width: 17rem;
+  color: hsl(231, 7%, 65%);
+  padding: 3%;
+  padding-left: 0;
+}
+.demo {
+  display: flex;
+  /* border: 2px solid black; */
+  margin-top: 2rem;
+  justify-content: space-between;
+  width: 23rem;
+}
+.logo-header {
+  /* border: 2px solid black; */
+  position: relative;
+  left: 10.3%;
+  padding-top: 3%;
+}
+.new {
+  /* border: 2px solid black; */
+  border-radius: 50rem;
+  padding: 2%;
+  background-color: hsl(230, 29%, 20%);
+  color: white;
+}
+.dash {
+  padding-top: 2%;
+  word-spacing: 0.5rem;
+  color: hsl(231, 7%, 65%);
+  letter-spacing: 0.1rem;
+}
+.schedule {
+  /* border: 2px solid black; */
+  padding: 3%;
+  background-color: hsl(0, 100%, 68%);
+  border-radius: 5px;
+}
+.schedule:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.schedule a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+}
+.preview {
+  padding-top: 2%;
+  letter-spacing: 0.8px;
+  color: hsl(231, 7%, 65%);
+  text-transform: uppercase;
+}
+.hamburger {
+  display: none;
+  background-color: white;
+  border: 1px solid hsl(207, 33%, 95%);
+  cursor: pointer;
+  background: transparent;
+}
+.hamburger:focus {
+  outline: none;
+}
+#login {
+  font-weight: lighter;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  cursor: text;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+hr {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  hr {
+    display: block;
+  }
+  .dot {
+    display: none;
+  }
+  .section-overhead {
+    flex-direction: column-reverse;
+    bottom: 0rem;
+  }
+  .right-section-image {
+    left: 3rem;
+    width: 250%;
+    padding-top: 20%;
+  }
+  .list-sep {
+    margin-top: 1rem;
+  }
+  .nav-items {
+    margin-top: 3rem;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    height: auto;
+    text-align: center;
+    display: none;
+  }
+  #nav-ul.show {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+    margin-top: 15%;
+    font-size: 30px;
+    position: relative;
+    right: 3rem;
+  }
+  .left-section {
+    width: 100%;
+    top: 7rem;
+    left: 4.5rem;
+  }
+  .logo-header {
+    left: 16.5%;
+    padding-top: 15%;
+  }
+
+  .new-cta {
+    width: 20rem;
+    padding: 2%;
+    padding-left: 0;
+  }
+  .powerful-insight {
+    width: 60%;
+    padding: 2%;
+    padding-left: 0;
+    font-size: small;
+  }
+  .project-planning {
+    width: 50%;
+  }
+  .demo {
+    /* border: 2px solid black; */
+    width: 23rem;
+    padding: 2%;
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .new {
+    /* border: 2px solid black; */
+    border-radius: 50rem;
+    padding: 1%;
+  }
+
+  .top-design {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .new-cta {
+    width: 70%;
+    padding: 2%;
+    /* border: 2px solid black; */
+    font-size: small;
+    padding-left: 0;
+  }
+  .project-planning {
+    width: 55%;
+    font-size: small;
+  }
+  .demo {
+    width: 50%;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    padding: 2%;
+    font-size: small;
+    padding-left: 0;
+  }
+  .dash {
+    padding-top: 2%;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+  }
+  .schedule {
+    text-align: center;
+    padding: 5%;
+  }
+}
